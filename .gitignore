@@ -1,8 +1,12 @@
 *.iml
 *.apk
+*.jks
+*.keystore
 .gradle/
 local.properties
 .idea/
+.env
+.env.*
 .DS_Store
 build/
 /captures
