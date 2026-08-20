@@ -43,6 +43,13 @@ gradle :app:assembleDebug --stacktrace
 ve elle çalıştırılabilir. Android SDK platform 34 ile gerçek debug APK derler ve
 `Hiremco-Starter-v3.0-debug` adlı artifact'i yükler.
 
+Etiket veya elle tetiklenen `Build signed Hiremco Starter APK` iş akışı, yalnızca
+GitHub Actions sırlarından geçici çalışma dizinine açılan kalıcı yayın anahtarıyla
+`assembleRelease` çalıştırır. Üretilen APK `apksigner` ile doğrulanır ve APK ile
+SHA-256 dosyası birlikte `Hiremco-Starter-v3.0-release` artifact'i olarak yüklenir.
+Yayın imzalama bilgileri sağlanmadan bir release görevi çalıştırılırsa derleme
+açık bir hata ile durur; debug imzalama ve debug derlemeleri değişmeden kalır.
+
 ## Lisans
 
 Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
