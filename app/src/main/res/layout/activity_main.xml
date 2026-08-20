@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <Switch
+            android:id="@+id/master_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/master_switch_label"
+            android:layout_marginBottom="16dp" />
+
+        <Switch
+            android:id="@+id/boot_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/boot_switch_label"
+            android:layout_marginBottom="4dp" />
+
+        <Button
+            android:id="@+id/boot_delay_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <Switch
+            android:id="@+id/wake_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wake_switch_label"
+            android:layout_marginBottom="4dp" />
+
+        <Button
+            android:id="@+id/wake_delay_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/package_label"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/package_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/package_hint"
+            android:inputType="textNoSuggestions"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/detect_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detect_button_label"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_button_label"
+            android:layout_marginBottom="28dp" />
+
+        <Button
+            android:id="@+id/accessibility_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_accessibility_label"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/overlay_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_overlay_label" />
+
+    </LinearLayout>
+</ScrollView>

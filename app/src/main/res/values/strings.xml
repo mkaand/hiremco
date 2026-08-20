@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Hiremco Starter</string>
+    <string name="accessibility_service_description">Hiremco Starter, cihaz açılışında veya ekran uyandığında Hiremco uydu alıcısı uygulamasını otomatik başlatmak için bu erişilebilirlik hizmetini kullanır. Ekran içeriğini okumaz veya değiştirmez; yalnızca ön planda hangi uygulamanın çalıştığını izler.</string>
+    <string name="master_switch_label">Otomatik başlatma (ana anahtar)</string>
+    <string name="boot_switch_label">Açılışta başlat</string>
+    <string name="wake_switch_label">Ekran uyanınca başlat</string>
+    <string name="boot_delay_format">Açılış gecikmesi: %1$d sn</string>
+    <string name="wake_delay_format">Uyanma gecikmesi: %1$d sn</string>
+    <string name="package_label">Hiremco uygulamasının paket adı</string>
+    <string name="package_hint">com.superdtv</string>
+    <string name="detect_button_label">Yüklü uygulamalarda ara</string>
+    <string name="save_button_label">Kaydet</string>
+    <string name="open_accessibility_label">Erişilebilirlik ayarlarını aç</string>
+    <string name="open_overlay_label">"Diğer uygulamaların üzerinde göster" iznini aç</string>
+    <string name="saved_toast">Kaydedildi</string>
+    <string name="detect_none_found">Hiremco ile eşleşen yüklü bir uygulama bulunamadı. Paket adını elle girin.</string>
+    <string name="detect_dialog_title">Bulunan uygulamalar</string>
+    <string name="accessibility_enabled">Erişilebilirlik hizmeti: Etkin</string>
+    <string name="accessibility_disabled">Erişilebilirlik hizmeti: Etkin değil — açmak için aşağıdaki düğmeyi kullanın</string>
+</resources>

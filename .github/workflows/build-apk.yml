@@ -2,7 +2,7 @@ name: Build Hiremco Starter APK
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   workflow_dispatch: {}
 
 jobs:
@@ -23,14 +23,19 @@ jobs:
         with:
           gradle-version: '8.7'
 
-      # No committed Gradle wrapper jar in this project, so we call the
-      # `gradle` binary that setup-gradle just put on PATH directly,
-      # instead of ./gradlew.
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android SDK platform 34
+        run: sdkmanager "platforms;android-34" "build-tools;34.0.0"
+
+      # The imported wrapper is intentionally incomplete (properties only), so
+      # use the real Gradle 8.7 installation provided above.
       - name: Build debug APK
         run: gradle :app:assembleDebug --stacktrace
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Hiremco-Starter-debug-apk
+          name: Hiremco-Starter-v3.0-debug
           path: app/build/outputs/apk/debug/*.apk
