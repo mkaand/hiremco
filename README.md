@@ -42,3 +42,7 @@ gradle :app:assembleDebug --stacktrace
 `Build Hiremco Starter APK` GitHub Actions iş akışı `main` dalına her push'ta
 ve elle çalıştırılabilir. Android SDK platform 34 ile gerçek debug APK derler ve
 `Hiremco-Starter-v3.0-debug` adlı artifact'i yükler.
+
+## Lisans
+
+Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
